@@ -2,9 +2,11 @@ name: Swift
 
 on:
   push:
-    branches: [ master ]
+    branches:
+     - master
   pull_request:
-    branches: [ master ]
+    branches:
+     - master
 
 jobs:
   build:
@@ -13,7 +15,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
+    - name: Force XCode 11.3
+      run: sudo xcode-select -switch /Applications/Xcode_11.3.app
+    - name: Build XCode Project
       run: swift build -v
-    - name: Run tests
+    - name: Run Tests
       run: swift test -v
