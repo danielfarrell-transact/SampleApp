@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "900b87b6f245ec29228fc19e017345d5"
+build_time: [1613754920, 754156000]
+inputs:
+  "/Users/danielfarrell/Developer/iOS/SampleApp/SampleApp/Logic/SomeLogic.swift": [9223372036, 854775807]
+  "/Users/danielfarrell/Developer/iOS/SampleApp/SampleApp/ViewController.swift": [9223372036, 854775807]
+  "/Users/danielfarrell/Developer/iOS/SampleApp/SampleApp/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/danielfarrell/Developer/iOS/SampleApp/SampleApp/SceneDelegate.swift": [9223372036, 854775807]
