@@ -14,5 +14,10 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Build XCode Project
-        run: xcodebuild build -workspace SampleApp.xcworkspace -scheme SampleApp
+        uses: sersoft-gmbh/xcodebuild-action@v1
+        with:
+          project: SampleApp.xcodeproj
+          scheme: SampleApp
+          destination: platform=macOS
+          action: build
 
