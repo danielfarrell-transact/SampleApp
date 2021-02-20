@@ -16,7 +16,7 @@ jobs:
       - name: Build XCode Project
         uses: sersoft-gmbh/xcodebuild-action@v1
         with:
-          project: SampleApp.xcodeproj
+          project: SampleApp.xcworkspace
           scheme: SampleApp
           destination: platform=macOS
           action: build
