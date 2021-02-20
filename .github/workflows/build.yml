@@ -17,13 +17,20 @@ jobs:
       - name: GitHub Action for SwiftLint
         uses: norio-nomura/action-swiftlint@3.2.1
 
+  Cocoapods:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Cocoapods
+        run: pod install
+
   Build:
     runs-on: macOS-latest
     steps:
       - name: Build XCode Project
         uses: sersoft-gmbh/xcodebuild-action@v1
         with:
-          project: SampleApp.xcodeproj
+          project: SampleApp.xcworkspace
           scheme: SampleApp
           destination: platform=macOS
           action: build
