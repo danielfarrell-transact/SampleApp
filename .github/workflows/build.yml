@@ -10,9 +10,9 @@ on:
 
 jobs:
 
-  SwiftLint:
-    runs-on: ubuntu-latest
+  Build:
+    runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: GitHub Action for SwiftLint
-        uses: norio-nomura/action-swiftlint@3.2.1
+      - name: Build XCode Project
+      - run: xcodebuild build -workspace SampleApp.xcworkspace -scheme SampleApp
+

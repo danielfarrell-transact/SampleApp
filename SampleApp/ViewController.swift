@@ -20,7 +20,12 @@ class ViewController: UIViewController {
 
         priceLabel.text = "$\(usdPrice)"
         calculateButton.layer.cornerRadius = 24
+
+
+
     }
+
+
 
     @IBAction func calculateButtonPressed(_ sender: Any) {
         let euroPrice = someLogic.calculateEuroPrice(usdPrice: usdPrice)

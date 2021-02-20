@@ -9,6 +9,11 @@ import Foundation
 
 class SomeLogic {
 
+
+
+
+
+
     func calculateEuroPrice(usdPrice: Double) -> Double {
         return usdPrice * 0.82
     }
